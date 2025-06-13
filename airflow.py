@@ -385,9 +385,9 @@ import json
 
 # Database connection details
 DATABASE_TYPE = 'mssql+pyodbc'
-USERNAME = 'Team2'
-PASSWORD = 'NOSAA'
-SERVER = '192.168.22.40'
+USERNAME = 'username'
+PASSWORD = 'password'
+SERVER = 'x.y.z.w'
 DATABASE_STAGING = 'TEAM2_STAGING'
 DATABASE_FINAL = 'TEAM2_FINAL'
 DRIVER = 'ODBC+Driver+17+for+SQL+Server'
@@ -398,9 +398,9 @@ engine_final = create_engine(f'{DATABASE_TYPE}://{USERNAME}:{PASSWORD}@{SERVER}/
 
 def extract():
     DATABASE_TYPE = 'mssql+pyodbc'
-    USERNAME = 'Team2'
-    PASSWORD = 'NOSAA'
-    SERVER = '192.168.22.40'
+    USERNAME = 'username'
+    PASSWORD = 'password'
+    SERVER = 'x.y.z.w'
     DATABASE = 'Source'
     DRIVER = 'ODBC+Driver+17+for+SQL+Server'
     engine_source  = create_engine(f'{DATABASE_TYPE}://{USERNAME}:{PASSWORD}@{SERVER}/{DATABASE}?driver={DRIVER}',fast_executemany=True)
